@@ -10,7 +10,7 @@ COPY . .
 
 FROM node:21-slim
 
-WORKDIR /app
+WORKDIR /app1
 
 COPY --from=frontend_base /app .
 

@@ -9,11 +9,11 @@ RUN npm i
 
 FROM node:21-slim
 
-WORKDIR /app
+WORKDIR /app1
 
 COPY --from=backend_base /app .
 
-COPY .env.sample .env
+COPY .env.docker .env
 
 EXPOSE 5000
 
