@@ -7,7 +7,7 @@ pipeline{
         
         stage("Code from Github Account") {
             steps{
-            git url: "https://github.com/ammukaleem/wanderlust.git", branch: "docker-compose"   
+            git url: "https://github.com/ammukaleem/wanderlust.git", branch: "devops-cicd"   
             }
         }
         
