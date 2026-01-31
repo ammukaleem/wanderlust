@@ -42,7 +42,7 @@ pipeline{
                  sh "docker compose up -d"
              }
          }
-	stage(Adding fetured posts"){
+	stage("Adding fetured posts"){
 	   steps{
 		sh "docker exec -it mongodb mongoimport --db wanderlust --collection posts --file ./data/sample_posts.json --jsonArray"
 	   }
